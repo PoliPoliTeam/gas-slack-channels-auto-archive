@@ -1,5 +1,11 @@
+# 作業メモ
+- 倉田のローカルで立ち上げ
+- 記事リンク(https://konifar.hatenablog.com/entry/2021/11/20/145833)
+- 2024/01/01 に実施
+
 # gas-slack-channels-auto-archive
 『100日後にアーカイブされるSlackチャネル』を動かすGoogle Apps Script
+
 
 [![clasp](https://img.shields.io/badge/built%20with-clasp-4285f4.svg)](https://github.com/google/clasp)
 ![deploy workflow](https://github.com/konifar/gas-slack-channels-auto-archive/actions/workflows/deploy.yml/badge.svg)
@@ -33,7 +39,7 @@ yarn install
 - `CLASPRC_ID_TOKEN`
 - `CLASPRC_REFRESH_TOKEN`
 
-`clasp create` で生成される `.clasp.json` の情報も同様に登録します。 
+`clasp create` で生成される `.clasp.json` の情報も同様に登録します。
 
 - `CLASP_SCRIPT_ID`
 
@@ -43,7 +49,7 @@ Apps Scriptの中で参照する値をPropertiesに設定します。設定箇�
 
 Name | Description | Example
 :-- | :-- | :--
-SLACK_TOKEN | Slack APIを利用するためのToken。ユーザーの招待を行える権限が必要です | xoxp-3241341353-13423423423-234253515315-91f5d9c4an64ddd7535e6edf1c3126aa
+| Slack APIを利用するためのToken。ユーザーの招待を行える権限が必要です | xoxp-3241341353-13423423423-234253515315-91f5d9c4an64ddd7535e6edf1c3126aa
 SLACK_BOT_TOKEN | アーカイブを行うSlack BotのToken。チャネルのアーカイブを行える権限が必要です | xoxb-33554526158-2357340024131-qGIP1234DjYShIHGOERJRfF5AB
 SLACK_BOT_USER_ID | アーカイブを行うSlack BotのユーザーID。チャネルに招待する時に使います | U02O7A02DQB
 SLACK_BOT_NAME | 結果をコメントするSlack Botの表示名 | 100日後にアーカイブされるSlackチャネル
